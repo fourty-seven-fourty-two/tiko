@@ -1,0 +1,14 @@
+---
+services:
+  api:
+    build:
+      context: .
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    working_dir: /app
+    environment:
+      - SECRET_KEY=django-insecure-#%*^+@7(t47z#oov%bmk%=58uyx!1+we$xbp^&768a3!ffqwh(
+      - DEBUG=true
+    entrypoint: "python manage.py runserver 0.0.0.0:8000"
