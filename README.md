@@ -1,6 +1,8 @@
 # Setup
 ## Docker
-Run `docker-compose up` - API will be available at "http://localhost:8000"
+Run `docker-compose up` - API will be available at "http://localhost:8000". 
+To run tests, execute `docker-compose run --entrypoint="pytest ." --rm api`.
+
 ## Local setup
 1. Install poetry
 ```
