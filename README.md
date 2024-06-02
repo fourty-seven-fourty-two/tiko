@@ -16,6 +16,14 @@ poetry install
 ```
 cp .env.dev .env
 ```
+4. Apply migrations
+```
+python manage.py migrate
+```
+5.Run server
+```
+python manage.py runserver
+```
 
 # Assumptions
 * only authenticated users can view events
